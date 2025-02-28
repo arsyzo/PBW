@@ -1,0 +1,70 @@
+<html>
+    <head>
+		<title>Judul Halaman</title>
+   		<meta charset="UTF-8"></meta>
+		<link rel="stylesheet" href="styles.css"></link>
+	    <script src="script.js"></script><!--untuk menyisipkan atau menghubungkan file JavaScript eksternal. -->
+        <h2>Lamaran pekerjaan </h2>
+		<style>
+			.circle-img {
+				width: 150px; /* Sesuaikan ukuran sesuai kebutuhan */
+				height: 150px; /* Sesuaikan ukuran sesuai kebutuhan */
+				border-radius: 50%; /* Membuat gambar menjadi bulat */
+				object-fit: cover; /* Memastikan gambar terisi dengan baik */
+				float: left; /* Menempatkan gambar di pinggir kiri */
+				margin: auto; /* Beri jarak agar tidak terlalu mepet */
+				display: block;
+			}
+			.clearfix {
+            clear: both; /* Menghentikan efek float agar teks dimulai di bawah */
+        	}
+			
+		</style>
+    </head>
+    <body>
+		<h1>Selamat Datang</h1>
+   		<p>Ini adalah paragraf pertama.</p>
+
+		<h1>Judul Utama</h1>
+		<h2>Judul Sub</h2>
+
+		<p>Ini adalah paragraf.</p><!--Tag untuk membuat paragraf-->
+		<p>Ini adalah <br>  paragraf.</p><!--garis baru/enter dengan tag <br>-->
+
+		<a href="https://www.example.com">Kunjungi Situs Kami</a><!--untuk membuat tautan yang dapat diklik oleh pengguna untuk diarahkan ke URL tertentu.-->
+		<a href="https://www.example.com" target="_blank">Buka di Tab Baru</a><!--untuk membuka tautan di tab baru dengan menambahkan atribut target="_blank":-->
+		
+		<img src="me.jpg" alt="Foto" class="circle-img"></p><!--Menampilkan gambar di halaman web dengan menggunakan tag <img> tetapi sebelumnya gambar harus tersimpan di direktory yang sama dengan file htmlnya-->
+		<div class="clearfix"></div><!--agar disekitar teks tidak menempel pada foto (setelah gambar untuk memastikan teks dimulai dari bawah, bukan di samping.)-->
+		
+		<ul><!--untuk menyusun informasi yang tidak memiliki urutan atau prioritas tertentu, sehingga mudah dibaca dan terorganisir dengan baik.-->
+			<li>Sholeh</li>
+			<li>Kaya Raya</li>
+			<li>Tampan</li>
+		</ul>
+		<ol type="A">
+			<li>Langkah Pertama</li>
+			<li>Langkah Kedua</li>
+			<li>Langkah Ketiga</li>
+		 </ol>
+
+		<table border="1"><!-- tabel dibuat menggunakan tag <table>. seperti yang ada di exel atau spreadsheet-->
+			<tr><!--Digunakan untuk mendefinisikan baris dalam tabel-->
+				<th>Nama</th><!--Digunakan untuk membuat sel header dengan teks tebal.-->
+				<th>Usia</th>
+				<th>Kota</th>
+			</tr>
+			<tr>
+				<td>Ani</td><!--Digunakan untuk memasukkan data ke dalam tabel.-->
+				<td>25</td>
+				<td>Jakarta</td>
+			</tr>
+			<tr>
+				<td>Budi</td>
+				<td>30</td>
+				<td>Bandung</td>
+			</tr>
+		</table>
+        
+    </body>
+</html>
