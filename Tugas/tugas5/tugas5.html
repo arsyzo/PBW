@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="tugas5.css" />
+    <script src="tugas5.js"></script>
+    <title>Kalkulator Nilai </title>
+  </head>
+  <body>
+    <header>
+      <h1>Kalkulator Nilai Mata Kuliah</h1>
+    </header>
+    <div class="container">
+      <section class="content">
+        <label for="nim" >NIM</label>
+        <input type="text" class="text-field" name="nim" id="nim" />
+        <br />
+        <label for="nilai">Nilai Mata Kuliah</label>
+        <input type="number" class="text-field" name="nilai" id="nilai" />
+        <br />
+        <br />
+        <button class="btn" onclick="rentang_Nilai()">Submit</button>
+        <br />
+        <br />
+        <p>Nilai Angka : <span id="hasil"></span></p>
+      </section>
+    </div>
+  </body>
+</html>
