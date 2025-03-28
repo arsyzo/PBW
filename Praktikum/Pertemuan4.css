@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ } 
+ 
+ 
+ header {
+    background-color: #9c1328;
+    color: white;
+    text-align: center;
+    padding: 20px;
+ }
+
+ nav {
+    background-color: #d73e3e;
+    padding: 10px;
+    text-align: center;
+ }
+ 
+ 
+ nav ul {
+    list-style: none;
+  }
+ 
+ 
+ nav ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+ 

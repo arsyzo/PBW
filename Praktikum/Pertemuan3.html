@@ -1,0 +1,41 @@
+<html>
+<head>
+   <title>Inline CSS</title>
+
+   <!-- contoh -->
+   <title>Internal CSS</title>
+   <style>
+       body {
+           font-family: Arial, sans-serif;
+           background-color: #f4f4f4;
+       }
+       h1 {
+           color: blue;
+           text-align: center;
+       }
+    </style>
+</head>
+<body>
+   <h1 style="color: blue; font-size: 24px;">Teks ini berwarna biru dengan ukuran 24px</h1>
+   <p style="background-color: yellow; padding: 10px;">Paragraf ini memiliki latar belakang kuning.</p>
+   <h1>Selamat Datang di CSS</h1>
+   <p>Ini adalah contoh penggunaan Internal CSS.</p>
+
+   <!-- radio button-->
+   <label><input type="radio" name="gender" value="male"> Laki-laki</label>
+   <label><input type="radio" name="gender" value="female"> Perempuan</label>
+   <!-- chekbox -->
+   <label><input type="checkbox" name="hobi" value="musik"> Musik</label>
+   <label><input type="checkbox" name="hobi" value="olahraga"> Olahraga</label>
+   <label><input type="checkbox" name="hobi" value="membaca"> Membaca</label>
+   <!--button -->
+   <button type="submit">Kirim</button>
+   <button type="button" onclick="alert('Halo!')">Klik Saya</button>
+   <!-- file upload -->
+   <form action="upload.php" method="post" enctype="multipart/form-data">
+    <label for="file">Pilih File:</label>
+    <input type="file" id="file" name="file">
+    <button type="submit">Unggah</button>
+    </form>
+</body>
+</html>
