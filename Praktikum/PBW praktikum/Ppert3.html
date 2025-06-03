@@ -1,0 +1,58 @@
+<html>
+   <head>
+  
+   </head>
+       <body>
+          
+        <!--  from untuk mengumpulkan data dari pengguna, seperti nama, email, nomor telepon, dan lainnya.
+        form: Elemen ini mendefinisikan sebuah form.
+        action: Menentukan tujuan pengiriman data.
+        method: Menentukan metode pengiriman data (GET atau POST).
+        -->
+        <form action="" method="">
+        </form>
+
+        <!-- untuk menerima input dari pengguna dalam bentuk teks pendek seperti nama, email, atau username -->
+        <input type="text" name="username" > 
+
+        <!-- untuk menerima input dalam bentuk teks panjang, seperti deskripsi atau komentar.
+        textarea mendukung teks multi-baris, memungkinkan pengguna untuk menulis lebih banyak informasi dalam satu kolom input.  -->
+        <textarea name="komentar" rows="4" cols="50" placeholder="Masukkan komentar Anda"></textarea>
+
+        <!-- Dropdown digunakan ketika pengguna harus memilih satu opsi dari sekumpulan pilihan. -->
+        <select name="pilihan"> <!-- berfungsi sebagai container bagi opsi yang tersedia -->
+            <option value="1">Pilihan 1</option> <!-- opsi elemen pilihan yang dapat dipilih oleh pengguna-->
+            <option value="2">Pilihan 2</option>
+        </select>
+
+        <!-- Radio button digunakan untuk memilih satu opsi dari beberapa pilihan yang telah ditentukan.hanya bisa satu pilihan.
+        contohnya: jenis kelamin, metode pembayaran, atau jawaban dalam survei. -->
+        <label><input type="radio" name="gender" value="male"> Laki-laki</label>
+        <label><input type="radio" name="gender" value="female"> Perempuan</label>
+
+        <!-- Checkbox digunakan untuk memilih lebih dari satu opsi dalam sebuah formulir. bisa memilih semuanya.
+        contohnya: formulir preferensi, survei, atau pemilihan kategori produk  -->
+        <label><input type="checkbox" name="hobi" value="musik"> Musik</label>
+        <label><input type="checkbox" name="hobi" value="olahraga"> Olahraga</label>
+        <label><input type="checkbox" name="hobi" value="membaca"> Membaca</label>
+
+        <!-- Tombol Button digunakan dalam HTML untuk mengirimkan formulir atau menjalankan skrip tertentu yang berkaitan dengan interaksi pengguna. -->
+        <button type="submit">Kirim</button>
+        <button type="button" onclick="alert('Halo!')">Klik Saya</button>
+
+        <!-- untuk memungkinkan pengguna mengunggah file ke server. Elemen ini biasanya digunakan dalam formulir pendaftaran, pengunggahan dokumen, atau aplikasi berbagi file. -->
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+            <label for="file">Pilih File:</label>
+            <input type="file" id="file" name="file">
+            <button type="submit">Unggah</button>
+        </form>
+
+        <!-- memastikan bahwa data yang dimasukkan oleh pengguna sesuai dengan format yang diharapkan sebelum dikirim ke server. -->
+        <input type="text" name="username" required minlength="5" maxlength="20">
+        <input type="email" name="email" required>
+        <input type="number" name="age" min="18" max="60">
+        <button type="submit">Kirim</button>
+
+
+       </body>
+</html>

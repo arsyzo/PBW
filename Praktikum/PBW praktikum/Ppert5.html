@@ -1,0 +1,92 @@
+<!-- JavaScript di dalam Elemen HTML (Inline JavaScript) -->
+<button onclick="alert('Halo! Ini dari JavaScript')">Klik Saya</button>
+
+<!-- JavaScript di dalam Tag <script> (Internal JavaScript) -->
+<html>
+    <head>
+   <title>Belajar JavaScript</title>
+</head>
+<body>
+   <h1 id="judul">Selamat Datang</h1>
+   <button onclick="ubahTeks()">Ubah Teks</button>
+
+
+   <script>
+       function ubahTeks() {
+           document.getElementById("judul").innerHTML = "Teks telah berubah!";
+       }
+   </script>
+</body>
+</html>
+
+<!-- JavaScript di dalam File Eksternal (External JavaScript) -->
+<script>
+function salam() {
+  alert("Selamat datang di website kami!");
+}
+</script>
+
+<!-- Penggunaan let untuk deklarasi variable -->
+<script>
+function contohLet() {
+   let y = 10;
+   if (true) {
+       let y = 20;
+       console.log("Nilai dalam blok:", y);
+   }
+   console.log("Nilai luar blok:", y);
+}
+contohLet();
+</script>
+
+<!-- Penggunaan const untuk deklarasi variable -->
+<script>
+const z = 100;
+z = 200; // Akan menyebabkan error
+</script>
+
+
+
+<script>
+let nama = "Budi"; // String
+let umur = 30; // Number
+let isStudent = false; // Boolean
+let buah = ["Apel", "Mangga", "Jeruk"]; // Array
+let mahasiswa = { nama: "Rina", usia: 20, jurusan: "Informatika" }; // Object
+
+
+console.log(nama);  // Output: Budi
+console.log(buah[1]); // Output: Mangga
+console.log(mahasiswa.jurusan); // Output: Informatika
+</script>
+
+<!-- contoh study kasus kalkulatoe sederhana -->
+ <html>
+<head>
+   <title>Kalkulator Sederhana</title>
+</head>
+<body>
+   <h2>Kalkulator</h2>
+   <input type="number" id="num1">
+   <input type="number" id="num2">
+   <button onclick="hitung()">Hitung</button>
+   <p>Hasil: <span id="hasil"></span></p>
+
+
+   <script>
+       function hitung() {
+           let num1 = document.getElementById("num1").value;
+           let num2 = document.getElementById("num2").value;
+           let hasil = parseInt(num1) + parseInt(num2);
+           document.getElementById("hasil").innerText = hasil;
+       }
+   </script>
+</body>
+</html>
+
+
+
+
+
+
+
