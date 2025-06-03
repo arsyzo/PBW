@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- untuk mengatur tampilan agar responsif pada berbagai perangkat, terutama mobile -->
+        <title>Form Pendaftaran sederhana</title>
+    </head>
+    <body>
+        <form action="" method="post">
+            <!-- untuk input nama -->
+            <label for="nama">Nama:</label>
+            <input type="text" name="nama" id="nama" />
+            <br />
+            <!-- untuk input email -->
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" />
+            <br>
+            <label for="jenis_kelamin">Jenis Kelamin:</label>
+            
+            <input
+              type="radio"
+              name="jenis_kelamin"
+              id="jenis_kelamin"
+              value="Laki-laki"
+            />Laki-laki
+            
+            <input
+              type="radio"
+              name="jenis_kelamin"
+              id="jenis_kelamin"
+              value="Perempuan"
+            />Perempuan
+            <br />
+            <!-- membuat tampilan chekbox -->
+            <label for="hobi">Hobi:</label>
+            <input type="checkbox" name="hobi" id="hobi" value="Musik" />Musik
+            <input type="checkbox" name="hobi" id="hobi" value="Olahraga" />Olahraga
+            <br />
+            <!-- membuat dropdown menu pilihan -->
+            <label for="kota">Pilih Kota:</label>
+            <select name="kota" id="kota">
+            <option value="Jakarta">Jakarta</option>
+            <option value="Bandung">Bandung</option>
+            <option value="Bogor">Bogor</option>
+            <option value="Surabaya">Surabaya</option>
+            <option value="Semarang">Semarang</option>
+            <option value="Yogyakarta">Yogyakarta</option>
+            <option value="Malang">Malang</option>
+            </select>
+            <br />
+            <!-- untuk upload foto -->
+            <label for="foto">Upload Foto:</label>
+            <input type="file" name="foto" id="foto" />
+            <br />
+            <input type="submit" value="Daftar" />
+        </form>
+    </body>
+</html>

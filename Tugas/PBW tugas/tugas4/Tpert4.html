@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />  <!-- untuk mengatur tampilan agar responsif pada berbagai perangkat -->
+    <title>Halaman Web Sederhana</title>
+    <link rel="stylesheet" href="styleTugas3.css" />  <!-- Menghubungkan halaman HTML dengan file CSS eksternal (tugas3.css) untuk styling -->
+  </head>
+  <body>
+    <header>
+      <h1>Selamat Datang di Website Sederhana</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#">Beranda</a></li>
+        <li><a href="#">Tentang</a></li>
+        <li><a href="#">Layanan</a></li>
+        <li><a href="#">Kontak</a></li>
+      </ul>
+    </nav>
+    
+    <div class="container"> <!-- Membungkus konten utama dan sidebar untuk tata letak yang lebih rapi -->
+      <section class="content"> <!-- bagan formulir pendaftaran --> <!-- -->
+        <form action="" method="post">
+          <h2>Formulir Pendaftaran</h2>
+          <p>Silahkan isi formulir di bawah ini untuk mendaftar.</p>
+          <label for="nama">Nama Lengkap:</label>
+          <input
+            class="text-field"
+            type="text"
+            id="nama"
+            name="nama"
+            required
+          />
+          <label for="email">Email:</label>
+          <input
+            class="text-field"
+            type="email"
+            id="email"
+            name="email"
+            required
+          />
+          <label for="password">Password</label>
+          <input
+            class="text-field"
+            type="password"
+            id="password"
+            name="password"
+            required
+          />
+          <hr />
+          <!-- membuat tampilan radio button -->
+          <label for="jenis_kelamin">Jenis Kelamin</label>
+          <input
+            class="text-field"
+            type="radio"
+            name="jenis_kelamin"
+            id="jenis_kelamin"
+          />
+          <p class="choice-label">Laki-laki</p>
+          <input
+            class="text-field"
+            type="radio"
+            name="jenis_kelamin"
+            id="jenis_kelamin"
+          />
+          <p class="choice-label">Perempuan</p>
+          <hr />
+          <!-- membuat tampilan chekbox -->
+          <label for="hobi">Hobi:</label>
+          <input class="text-field" type="checkbox" name="hobi" id="hobi" />
+          <p class="choice-label">Musik</p>
+          <input class="text-field" type="checkbox" name="hobi" id="hobi" />
+          <p class="choice-label">Olahraga</p>
+          <input class="text-field" type="checkbox" name="hobi" id="hobi" />
+          <p class="choice-label">Membaca</p>
+          <hr />
+          <!-- membuat dropdown menu pilihan -->
+          <label for="kota">Pilih Kota:</label>
+          <select class="text-field" name="kota" id="kota">
+            <option value="Jakarta">Jakarta</option>
+            <option value="Bandung">Bandung</option>
+            <option value="Bogor">Bogor</option>
+            <option value="Surabaya">Surabaya</option>
+            <option value="Semarang">Semarang</option>
+            <option value="Yogyakarta">Yogyakarta</option>
+            <option value="Malang">Malang</option>
+          </select>
+          <label for="pesan">Pesan Tambahan:</label>
+          <textarea
+            class="text-field"
+            name="pesan"
+            id="pesan"
+            placeholder="Tulis pesan di sini..."
+          ></textarea>
+          <button type="submit" class="btn">Kirim</button>
+        </form>
+      </section>
+       <!--Sidebar untuk informasi tambahan.-->
+      <aside class="sidebar">
+        <h2>Sidebar</h2>
+        <p>
+          Bagian sidebar dapat berisi tautan, iklan, atau informasi tambahan.
+        </p>
+      </aside>
+    </div>
+  </body>
+</html>
